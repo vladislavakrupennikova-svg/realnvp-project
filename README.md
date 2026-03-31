@@ -77,4 +77,5 @@ Histogram and statistics check the logdet distribution for model stability
 <img width="560" height="348" alt="image" src="https://github.com/user-attachments/assets/0b824dd9-c026-4605-9b53-63eaca4de028" />
 
 Generating images
+
 <img width="473" height="465" alt="image" src="https://github.com/user-attachments/assets/e8f5c282-e4c7-4d2d-a8bc-916fb53c7993" />
