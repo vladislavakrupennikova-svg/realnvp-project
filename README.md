@@ -47,3 +47,4 @@ Program Functionality:
     Visualizes progressive transformation of noise to image through each RealNVP layer.
 
 Examples from dataset:
+<img width="1029" height="160" alt="image" src="https://github.com/user-attachments/assets/370b5446-3495-49a2-9238-5d9e61885649" />
