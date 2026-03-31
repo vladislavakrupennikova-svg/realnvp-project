@@ -59,6 +59,7 @@ Bits-per-dim (BPD): normalized likelihood, standard metric for generative models
 
 Reconstruction: x -> z - >x_rec, MSE, visualization
 <img width="687" height="459" alt="image" src="https://github.com/user-attachments/assets/6d74de64-8885-44f3-bd5e-786b9d898600" />
+
 MSE: Mean Squared Error between original and reconstructed inputs (first 16 samples)
 Value ~ 3.4e-15:
 - essentially zero error - near-perfect reconstruction
