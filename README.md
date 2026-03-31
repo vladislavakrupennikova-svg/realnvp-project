@@ -46,5 +46,35 @@ Program Functionality:
  8) Stepwise Inversion and GIF Animation:
     Visualizes progressive transformation of noise to image through each RealNVP layer.
 
+Steps with peictures:
+
 Examples from dataset:
 <img width="1029" height="160" alt="image" src="https://github.com/user-attachments/assets/370b5446-3495-49a2-9238-5d9e61885649" />
+
+Training metrics:
+Loss (NLL): measures how well the model fits the data (lower is better)
+avg_logdet: tracks how the transformation scales space (stability & invertibility)
+Bits-per-dim (BPD): normalized likelihood, standard metric for generative models (lower is better)
+<img width="1078" height="334" alt="image" src="https://github.com/user-attachments/assets/4013c14b-ace5-4229-badc-464d3446222b" />
+
+Reconstruction: x -> z - >x_rec, MSE, visualization
+<img width="687" height="459" alt="image" src="https://github.com/user-attachments/assets/6d74de64-8885-44f3-bd5e-786b9d898600" />
+MSE: Mean Squared Error between original and reconstructed inputs (first 16 samples)
+Value ~ 3.4e-15:
+- essentially zero error - near-perfect reconstruction
+- confirms invertibility of the model (no information loss)
+
+Projection of the latent space. Shows the distribution of points in the latent space by the first two coordinates.
+<img width="540" height="479" alt="image" src="https://github.com/user-attachments/assets/33de2b4d-4be9-4764-9884-178d51c8ca2d" />
+
+A series of images of intermediate values between two endpoints shows how the noise becomes a picture.
+<img width="638" height="79" alt="image" src="https://github.com/user-attachments/assets/7524ccbe-3589-472c-9932-9d87bb193e21" />
+
+Generation of new layers. We take random noise, invert it, and generate new images.
+<img width="439" height="254" alt="image" src="https://github.com/user-attachments/assets/1aaf4d37-9917-4a18-9801-11cf90bc4978" />
+
+Histogram and statistics check the logdet distribution for model stability
+<img width="560" height="348" alt="image" src="https://github.com/user-attachments/assets/0b824dd9-c026-4605-9b53-63eaca4de028" />
+
+Generating images
+<img width="473" height="465" alt="image" src="https://github.com/user-attachments/assets/e8f5c282-e4c7-4d2d-a8bc-916fb53c7993" />
